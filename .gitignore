@@ -1,0 +1,15 @@
+# ── 內部工具（不推上 GitHub）──
+planner.html
+planner.css
+planner.js
+photo-select.html
+
+# ── 舊版殘留 ──
+server.py
+start_conda.bat
+__pycache__/
+*.py
+
+# ── 系統檔案 ──
+.DS_Store
+Thumbs.db
