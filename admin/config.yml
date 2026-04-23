@@ -1,0 +1,32 @@
+backend:
+  name: github
+  repo: bakingandcafe-ship-it/wobally_caffee
+  branch: main
+
+media_folder: "咖啡廳照片" 
+public_folder: "咖啡廳照片"
+
+collections:
+  - name: "site_content"
+    label: "網站內容管理"
+    files:
+      - name: "homepage"
+        label: "首頁文案與照片設定"
+        file: "content/data.json"
+        description: "於此修改首頁大標題、文字敘述、營業時間與加入相簿照片"
+        fields:
+          - {label: "上方小字 (Eyebrow)", name: "hero_eyebrow", widget: "string"}
+          - {label: "主大標 (Title)", name: "hero_title", widget: "string"}
+          - {label: "地址 (Address)", name: "hero_address", widget: "string"}
+          - {label: "副標題 (Tagline)", name: "hero_tagline", widget: "string"}
+          - {label: "簡介敘述 (Intro)", name: "hero_intro", widget: "text"}
+          - {label: "頁尾：營業時間 (Footer Hours)", name: "footer_hours", widget: "string"}
+          - {label: "頁尾：地址 (Footer Address)", name: "footer_address", widget: "string"}
+          - {label: "頁尾：Instagram 網址", name: "footer_ig", widget: "string"}
+          - {label: "頁尾：Threads 網址", name: "footer_threads", widget: "string"}
+          - label: "相簿照片清單 (Gallery)"
+            name: "gallery_photos"
+            widget: "list"
+            fields:
+              - {label: "上傳新照片或選擇現有照片", name: "image", widget: "image"}
+              - {label: "照片分類", name: "category", widget: "select", options: ["裝潢", "餐點"]}

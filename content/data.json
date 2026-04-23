@@ -1,0 +1,18 @@
+{
+  "hero_eyebrow": "Coming Soon · 新竹竹北",
+  "hero_title": "窩在焙裡",
+  "hero_address": "📍 新竹縣竹北市中正東路317巷2號",
+  "hero_tagline": "一間正在竹北慢慢成形的咖啡廳。",
+  "hero_intro": "店還在裝潢中，但我們已經開始把空間氣氛、甜點方向和咖啡日常慢慢記錄下來。讓你在正式開幕前，就先認識這間店。",
+  "footer_hours": "預計近期開幕",
+  "footer_address": "新竹縣竹北市中正東路317巷2號",
+  "footer_ig": "https://www.instagram.com/wobally_coffee",
+  "footer_threads": "https://www.threads.com/@wobally_coffee",
+  "gallery_photos": [
+    { "image": "咖啡廳照片/裝潢/S__25042946.jpg", "category": "裝潢" },
+    { "image": "咖啡廳照片/裝潢/LINE_ALBUM_20260404現場照片_260423_1.jpg", "category": "裝潢" },
+    { "image": "咖啡廳照片/裝潢/LINE_ALBUM_20260404現場照片_260423_2.jpg", "category": "裝潢" },
+    { "image": "咖啡廳照片/餐點/S__25034755_0.jpg", "category": "餐點" },
+    { "image": "咖啡廳照片/餐點/S__25034756_0.jpg", "category": "餐點" }
+  ]
+}

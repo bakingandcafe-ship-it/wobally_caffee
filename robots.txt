@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bakingandcafe-ship-it.github.io/wobally_caffee/sitemap.xml

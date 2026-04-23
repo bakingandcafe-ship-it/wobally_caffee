@@ -31,6 +31,9 @@ const FEATURED_PHOTOS = [
 
 // ── 讀取 photo-select.html 的自訂選擇 ───
 function getActivePhotos() {
+  if (cmsData && cmsData.gallery_photos && Array.isArray(cmsData.gallery_photos)) {
+     return cmsData.gallery_photos.map(p => p.image);
+  }
   try {
     const raw = localStorage.getItem("wob_featured_photos");
     if (raw) {
@@ -97,6 +100,10 @@ function escapeHtml(value) {
 }
 
 function detectCategory(path) {
+  if (cmsData && cmsData.gallery_photos) {
+    const found = cmsData.gallery_photos.find(p => p.image === path || encodeURI(p.image) === path);
+    if (found) return found.category;
+  }
   return path.includes("/裝潢/") ? "裝潢" : "餐點";
 }
 
@@ -112,7 +119,7 @@ function buildCard(path) {
 
   const img = document.createElement("img");
   img.src = encodeURI(path);
-  img.alt = `${cat}照片`;
+  img.alt = `窩在焙裡｜竹北咖啡廳 ${cat}照片`;
   img.loading = "lazy";
   img.decoding = "async";
 
@@ -186,5 +193,46 @@ if (topbar) {
   }, { passive: true });
 }
 
-// ── Init gallery ────────────────────────
-renderGallery();
+// ── 讀取 CMS 設定 ────────────────────────
+let cmsData = null;
+
+async function initCmsData() {
+  try {
+    const res = await fetch('content/data.json');
+    if (res.ok) {
+      cmsData = await res.json();
+      applyCmsData();
+    }
+  } catch(e) {
+    console.error("CMS data load error:", e);
+  }
+  renderGallery(); // 資料載入完畢後再繪製相簿
+}
+
+function applyCmsData() {
+  if (!cmsData) return;
+  const updateText = (id, key) => {
+    const el = document.getElementById(id);
+    if (el && cmsData[key]) el.textContent = cmsData[key];
+  };
+  
+  updateText("cms-eyebrow", "hero_eyebrow");
+  updateText("cms-title", "hero_title");
+  updateText("cms-address", "hero_address");
+  updateText("cms-tagline", "hero_tagline");
+  updateText("cms-intro", "hero_intro");
+  updateText("cms-footer-hours", "footer_hours");
+  
+  const fAddr = document.getElementById("cms-footer-address");
+  if (fAddr && cmsData.footer_address) fAddr.innerText = cmsData.footer_address;
+  
+  const updateHref = (id, key) => {
+    const el = document.getElementById(id);
+    if (el && cmsData[key]) el.href = cmsData[key];
+  };
+  updateHref("cms-footer-ig", "footer_ig");
+  updateHref("cms-footer-threads", "footer_threads");
+}
+
+// ── Init ────────────────────────
+initCmsData();
