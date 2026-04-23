@@ -1,5 +1,5 @@
 {
-  "hero_eyebrow": "Coming Soon · 新竹竹北",
+  "hero_eyebrow": "COMING SOON · 新竹竹北",
   "hero_title": "窩在焙裡",
   "hero_address": "📍 新竹縣竹北市中正東路317巷2號",
   "hero_tagline": "一間正在竹北慢慢成形的咖啡廳。",
@@ -9,10 +9,37 @@
   "footer_ig": "https://www.instagram.com/wobally_coffee",
   "footer_threads": "https://www.threads.com/@wobally_coffee",
   "gallery_photos": [
-    { "image": "咖啡廳照片/裝潢/S__25042946.jpg", "category": "裝潢" },
-    { "image": "咖啡廳照片/裝潢/LINE_ALBUM_20260404現場照片_260423_1.jpg", "category": "裝潢" },
-    { "image": "咖啡廳照片/裝潢/LINE_ALBUM_20260404現場照片_260423_2.jpg", "category": "裝潢" },
-    { "image": "咖啡廳照片/餐點/S__25034755_0.jpg", "category": "餐點" },
-    { "image": "咖啡廳照片/餐點/S__25034756_0.jpg", "category": "餐點" }
-  ]
+    {
+      "image": "咖啡廳照片/上傳/S__1776933342866.jpg",
+      "category": "裝潢"
+    },
+    {
+      "image": "咖啡廳照片/上傳/S__1776933365491.jpg",
+      "category": "裝潢"
+    },
+    {
+      "image": "咖啡廳照片/裝潢/S__25042946.jpg",
+      "category": "裝潢"
+    },
+    {
+      "image": "咖啡廳照片/餐點/S__25034756_0.jpg",
+      "category": "餐點"
+    },
+    {
+      "image": "咖啡廳照片/餐點/S__25034755_0.jpg",
+      "category": "餐點"
+    }
+  ],
+  "story_eyebrow": "OUR STORY",
+  "story_title": "不只是咖啡和甜點，<br>而是一個讓人願意慢下來的地方。",
+  "story_desc": "窩在焙裡想留下的，不只是餐點本身，而是一種可以窩著、聊著、慢慢待著的感覺。 目前還在裝潢，但我們已經開始把這個空間的氣氛慢慢拼出來。",
+  "story_f1_title": "手沖到義式，認真對待每一杯。",
+  "story_f1_desc": "手沖咖啡選用精選單品豆，義式咖啡提供 Espresso、拿鐵、美式等選項；搭配甜點或鹹食，找到屬於自己的品嚐方式。",
+  "story_f2_title": "甜點和鹹食，一次都滿足。",
+  "story_f2_desc": "巴斯克乳酪、提拉米蘇、檸檬塔、季節限定甜點——加上鹹食選項，甜的鹹的都有，讓你每次來都找得到想吃的東西。",
+  "story_f3_title": "溫暖、安靜、好拍，也適合久坐。",
+  "story_f3_desc": "從吧台、座位到材質細節，都希望保留舒服、不趕人的節奏感。適合一個人放空，也適合朋友聚在這裡聊天。",
+  "menu_eyebrow": "MENU PREVIEW",
+  "menu_title": "即將推出的品項方向",
+  "menu_desc": "正式菜單開幕後公布，目前先預告幾個方向。"
 }
